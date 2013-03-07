@@ -7,7 +7,7 @@
 
   <project remote="yocto" name="poky" path="poky" revision="master"/>
 
-  <project remote="oe" name="meta-openembedded" path="meta-oe" revision="master"/>
+  <project remote="oe" name="meta-openembedded" path="meta-openembedded" revision="master"/>
 
   <project remote="freescale" name="yocto/meta-fsl-arm" path="meta-fsl-arm" revision="master_L3.5.7"/>
   <project remote="freescale" name="yocto/meta-fsl-multimedia" path="meta-fsl-multimedia" revision="master"/>
