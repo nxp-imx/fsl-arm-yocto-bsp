@@ -4,6 +4,7 @@
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
   <remote fetch="ssh://gerrit" name="freescale"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="git://sw-git01-tx30.am.freescale.net" name="fsl-mpusw"/>
 
   <project remote="yocto" name="poky" path="poky" revision="master"/>
 
@@ -11,5 +12,5 @@
 
   <project remote="freescale" name="yocto/meta-fsl-arm" path="meta-fsl-arm" revision="master_L3.5.7"/>
   <project remote="freescale" name="yocto/meta-fsl-multimedia" path="meta-fsl-multimedia" revision="master"/>
-
+  <project remote="fsl-mpusw" name="linux-infra" path="linux-infra" revision="master"/>
 </manifest>
