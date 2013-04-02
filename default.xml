@@ -12,5 +12,7 @@
 
   <project remote="freescale" name="yocto/meta-fsl-arm" path="meta-fsl-arm" revision="master_L3.5.7"/>
   <project remote="freescale" name="yocto/meta-fsl-multimedia" path="meta-fsl-multimedia" revision="master"/>
-  <project remote="fsl-mpusw" name="linux-infra" path="linux-infra" revision="master"/>
+  <project remote="fsl-mpusw" name="linux-infra" path="linux-infra" revision="master" >
+     <copyfile src="yocto/fsl-setup-arm.sh" dest="./fsl-setup-arm.sh"/>
+  </project>
 </manifest>
