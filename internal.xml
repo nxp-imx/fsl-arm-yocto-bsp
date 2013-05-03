@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote fetch="git://sw-git01-tx30.am.freescale.net" name="fsl-mpusw"/>
+
+  <project remote="fsl-mpusw" name="meta-fsl-mpu-internal" path="meta-fsl-mpu-internal" revision="master"/>
+  <project remote="fsl-mpusw" name="linux-infra" path="linux-infra" revision="master" >
+     <copyfile src="yocto/fsl-setup-arm.sh" dest="./fsl-setup-arm.sh"/>
+  </project>
+
+  <project path="manifest" name="default" />
+</manifest>
