@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <default sync-j="2"/>
+
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="ssh://gerrit" name="freescale"/>
+  <remote fetch="git://github.com/Freescale" name="freescale"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
-  <remote fetch="git://sw-git01-tx30.am.freescale.net" name="fsl-mpusw"/>
 
-  <project remote="yocto" name="poky" path="poky" revision="master"/>
+  <project remote="yocto" revision="master" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="master" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
-  <project remote="oe" name="meta-openembedded" path="meta-openembedded" revision="master"/>
+  <project remote="oe" revision="master" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <project remote="freescale" name="yocto/meta-fsl-arm" path="meta-fsl-arm" revision="master_L3.5.7"/>
-  <project remote="freescale" name="yocto/meta-fsl-multimedia" path="meta-fsl-multimedia" revision="master"/>
-  <project remote="fsl-mpusw" name="linux-infra" path="linux-infra" revision="master" >
-     <copyfile src="yocto/fsl-setup-arm.sh" dest="./fsl-setup-arm.sh"/>
+  <project remote="freescale" revision="master" name="fsl-community-bsp-base" path="sources/base">
+	<copyfile dest="README" src="README"/>
+	<copyfile dest="setup-environment" src="setup-environment"/>
   </project>
+
+  <project remote="freescale" revision="master" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
+  <project remote="freescale" revision="master" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
+
+  <remote fetch="git://sw-git01-tx30.am.freescale.net" name="fsl-release"/>
+
+  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="master" >
+     <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
+  </project>
+
+  <project remote="fsl-release" name="meta-fsl-mpu-internal" path="sources/meta-fsl-mpu-internal" revision="master" >
+     <copyfile src="tools/fsl-setup-internal-build.sh" dest="fsl-setup-internal-build.sh"/>
+  </project>
+
 </manifest>
