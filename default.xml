@@ -6,8 +6,7 @@
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
   <remote fetch="git://github.com/Freescale" name="freescale"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
-
-<remote fetch="git://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
 
   <project remote="yocto" revision="master" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="master" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
@@ -30,7 +29,7 @@
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
   </project>
 
-  <project remote="fsl-release" name="meta-fsl-mpu-internal" path="sources/meta-fsl-mpu-internal" revision="master_3.10.17" >
+  <project remote="fsl-release" name="meta-fsl-mpu-internal" path="sources/meta-fsl-mpu-internal" revision="master" >
      <copyfile src="tools/fsl-setup-internal-build.sh" dest="fsl-setup-internal-build.sh"/>
   </project>
 
