@@ -23,7 +23,7 @@
   <project remote="freescale" revision="master" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
   <project remote="OSSystems" revision="master" name="meta-browser" path="sources/meta-browser" />
-  <project remote="QT5" revision="jansa/qt5-5.2.1" name="meta-qt5" path="sources/meta-qt5" />
+  <project remote="QT5" revision="master" name="meta-qt5" path="sources/meta-qt5" />
 
   <remote fetch="git://sw-git01-tx30.am.freescale.net" name="fsl-release"/>
 
