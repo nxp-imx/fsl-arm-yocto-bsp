@@ -1,0 +1,8 @@
+This manifest is used to download an i.MX Yocto Project manifest.
+
+To download
+
+repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-3.10.17-1.0.0_ga
+repo sync
+
+This will download both Yocto Project community and the meta-fsl-bsp-release layer.
