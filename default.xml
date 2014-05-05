@@ -25,6 +25,9 @@
   <project remote="OSSystems" revision="cdf79fa08366eba24e6072e7a5899c50d11f7fbd" name="meta-browser" path="sources/meta-browser" />
   <project remote="QT5" revision="7a8f5fe098c4a553249710f6869c01bac888d398" name="meta-qt5" path="sources/meta-qt5" />
 
+  <remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
+  <project remote="guacamayo" revision="b370de472e14f3b6a562fa8fcdf9d012613cdcb7" name="meta-clutter" path="sources/meta-clutter"/>
+
   <remote fetch="git://sw-git01-tx30.am.freescale.net" name="fsl-release"/>
 
   <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="daisy_3.10.17-1.0.0_iotg" >
