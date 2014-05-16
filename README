@@ -8,13 +8,35 @@ Install the `repo` utility:
 $: mkdir ~/bin
 $: curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
 $: chmod a+x ~/bin/repo
-
-Download the BSP source:
-
 $: PATH=${PATH}:~/bin
+
+Download the BSP Yocto Project Environment
+
 $: mkdir fsl-arm-yocto-bsp
 $: cd fsl-arm-yocto-bsp
-$: repo init -u git://sw-git.freescale.net/fsl-arm-yocto-bsp.git
+$: repo init -u git://sw-git.freescale.net/fsl-arm-yocto-bsp.git -b imx-3.10.31-1.1.0_alpha
 $: repo sync
+
+Setup and Build for X11
+$: MACHINE=<machine name> source fsl-setup-release.sh -b build-x11 -e x11
+
+For all backends
+Build without QT
+$: bitbake fsl-image-gui
+
+Build with QT5 for X11, FB and Wayland (unsupported for DirectFB)
+$: bitbake fsl-image-qt5
+
+Setup and Build for FB 
+$: MACHINE=<machine name> source fsl-setup-release.sh -b build-fb -e fb
+
+Setup and Build for Wayland 
+$: MACHINE=<machine name> source fsl-setup-release.sh -b build-wayland -e wayland
+
+Setup and Build for DirectFB
+$: MACHINE=<machine name> source fsl-setup-release.sh -b build-dfb -e dfb
+
+
+
 
 
