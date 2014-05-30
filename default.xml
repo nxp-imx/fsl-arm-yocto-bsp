@@ -1,38 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-
-  <default sync-j="2"/>
-
-  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="git://github.com/Freescale" name="freescale"/>
-  <remote fetch="git://git.openembedded.org" name="oe"/>
+<?xml version="1.0" encoding="UTF-8" ?>
+  <manifest>
+  <default sync-j="2" />
+  <remote fetch="git://git.yoctoproject.org" name="yocto" />
+  <remote fetch="git://github.com/Freescale" name="freescale" />
+  <remote fetch="git://git.openembedded.org" name="oe" />
+  <remote fetch="git://git.freescale.com/imx" name="fsl-release" />
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
-  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
 
-  <project remote="yocto" revision="master" name="poky" path="sources/poky"/>
-  <project remote="yocto" revision="master" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
+  <project remote="yocto" revision="bee7e3756adf70edaeabe9d43166707aab84f581" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="af392c22bf6b563525ede4a81b6755ff1dd2c1c6" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
-  <project remote="oe" revision="master" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="oe" revision="eb4563b83be0a57ede4269ab19688af6baa62cd2" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <project remote="freescale" revision="master" name="fsl-community-bsp-base" path="sources/base">
-	<copyfile dest="README" src="README"/>
-	<copyfile dest="setup-environment" src="setup-environment"/>
+  <project remote="freescale" revision="6bc2400f3045e27dc1a4a65cb28bfb0e32403bb7" name="fsl-community-bsp-base" path="sources/base">
+        <copyfile dest="README" src="README"/>
+        <copyfile dest="setup-environment" src="setup-environment"/>
   </project>
 
-  <project remote="freescale" revision="master" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
-  <project remote="freescale" revision="master" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
+  <project remote="freescale" revision="07ad83db0fb67c5023bd627a61efb7f474c52622" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
+  <project remote="freescale" revision="5a12677ad000a926d23c444266722a778ea228a7" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
-  <project remote="OSSystems" revision="master" name="meta-browser" path="sources/meta-browser" />
-  <project remote="QT5" revision="master" name="meta-qt5" path="sources/meta-qt5" />
+  <project remote="OSSystems" revision="fc3969f63bda343c38c40a23f746c560c4735f3e" name="meta-browser" path="sources/meta-browser" />
 
-  <remote fetch="git://sw-git01-tx30.am.freescale.net" name="fsl-release"/>
-
-  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="master_3.10.17" >
-     <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
+  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="dora_3.10.17-1.0.0_GA">
+     <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh" />
   </project>
-
-  <project remote="fsl-release" name="meta-fsl-mpu-internal" path="sources/meta-fsl-mpu-internal" revision="master" >
-     <copyfile src="tools/fsl-setup-internal-build.sh" dest="fsl-setup-internal-build.sh"/>
-  </project>
-
-</manifest>
+  </manifest>
