@@ -12,7 +12,7 @@
   <project remote="yocto" revision="daisy" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="daisy" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
-  <project remote="oe" revision="ee6f88f28566acaada77a74ce02f66fee0219ab4" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="oe" revision="daisy" name="meta-openembedded" path="sources/meta-openembedded"/>
 
   <project remote="freescale" revision="daisy" name="fsl-community-bsp-base" path="sources/base">
 	<copyfile dest="README" src="README"/>
@@ -22,8 +22,8 @@
   <project remote="freescale" revision="daisy" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
   <project remote="freescale" revision="daisy" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
-  <project remote="OSSystems" revision="cdf79fa08366eba24e6072e7a5899c50d11f7fbd" name="meta-browser" path="sources/meta-browser" />
-  <project remote="QT5" revision="7a8f5fe098c4a553249710f6869c01bac888d398" name="meta-qt5" path="sources/meta-qt5" />
+  <project remote="OSSystems" revision="daisy" name="meta-browser" path="sources/meta-browser" />
+  <project remote="QT5" revision="daisy" name="meta-qt5" path="sources/meta-qt5" />
 
   <remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
   <project remote="guacamayo" revision="b370de472e14f3b6a562fa8fcdf9d012613cdcb7" name="meta-clutter" path="sources/meta-clutter"/>
