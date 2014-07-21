@@ -24,7 +24,7 @@
 
   <project remote="OSSystems" revision="dora" name="meta-browser" path="sources/meta-browser" />
 
-  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="dora_3.10.17-1.0.1_GA">
+  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="dora_3.10.17-1.0.1">
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh" />
   </project>
   </manifest>
