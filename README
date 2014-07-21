@@ -1,8 +1,44 @@
-This manifest is used to download an i.MX Yocto Project manifest.
+Freescale's Community Yocto BSP
+===============================
 
-To download
+To get the BSP you need to have `repo` installed and use it as:
 
-repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-3.10.17-1.0.0_ga
-repo sync
+Install the `repo` utility:
 
-This will download both Yocto Project community and the meta-fsl-bsp-release layer.
+$: mkdir ~/bin
+$: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo  > ~/bin/repo
+$: chmod a+x ~/bin/repo
+$: PATH=${PATH}:~/bin
+
+Download the BSP Yocto Project Environment
+
+$: mkdir fsl-arm-yocto-bsp
+$: cd fsl-arm-yocto-bsp
+$: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-3.10.31-1.0.1_ga
+$: repo sync
+
+Setup and Build for X11
+$: MACHINE=<machine> source setup-environment build-x11
+$: cd ../
+$: source fsl-setup-release.sh -b build-x11 -e x11
+
+Setup and build for DirectFB
+$: MACHINE=<machine> source setup-environment build-dfb
+$: cd ../
+$: source fsl-setup-release.sh -b build-dfb -e dfb
+$: bitbake fsl-image-dfb
+
+Setup and Build for FB
+$: MACHINE=<machine> source setup-environment build-fb
+$: cd ../
+$: source fsl-setup-release.sh -b build-fb -e fb
+$: bitbake fsl-image-fb
+
+Setup and Build for Wayland
+$: MACHINE=<machine> source setup-environment build-wayland
+$: cd ../
+$: source fsl-setup-release.sh -b build-wayland -e wayland
+$: bitbake fsl-image-weston
+
+
+
