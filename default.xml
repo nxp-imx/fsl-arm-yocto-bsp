@@ -10,23 +10,28 @@
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
 
-  <project remote="yocto" revision="5306aaab07a7a9b3b0c7e8008dabbd2e89daec28" name="poky" path="sources/poky"/>
-  <project remote="yocto" revision="bf431b06a27c2be728c93fedb0e9d2eb4d29ec85" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
+  <project remote="yocto" revision="c4f1f0f491f988901bfd6965f7d10f60cb94a76f" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="b3cf9ce918cd4fcbc5c39ade47d384414ea590ed" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
-  <project remote="oe" revision="ee6f88f28566acaada77a74ce02f66fee0219ab4" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="oe" revision="a6dcf6265822ca1484d991d10a3042e04a960cdb" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <project remote="freescale" revision="62c49908a34c444f0a71d7da7099961e06334b32" name="fsl-community-bsp-base" path="sources/base">
-	<copyfile dest="README" src="README"/>
-	<copyfile dest="setup-environment" src="setup-environment"/>
+  <project remote="freescale" revision="914d5d1f9b6b4fd384e3cc1e82bf144efa6425c0" name="fsl-community-bsp-base" path="sources/base">
+        <copyfile dest="README" src="README"/>
+        <copyfile dest="setup-environment" src="setup-environment"/>
   </project>
 
-  <project remote="freescale" revision="9481991ec1f17bb2555a2a32d1680b1f743d7101" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
+  <project remote="freescale" revision="5a1e9ce6e322cff080f7c1b53912af3d6227878f" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
   <project remote="freescale" revision="27fdb2f2642ecd55d5633bde880dd4c37acd0d42" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
-  <project remote="OSSystems" revision="cdf79fa08366eba24e6072e7a5899c50d11f7fbd" name="meta-browser" path="sources/meta-browser" />
-  <project remote="QT5" revision="7a8f5fe098c4a553249710f6869c01bac888d398" name="meta-qt5" path="sources/meta-qt5" />
+  <project remote="OSSystems" revision="395149f69e6b752e9f794487b6ab4433965fafef" name="meta-browser" path="sources/meta-browser" />
+  <project remote="QT5" revision="0137274b13a568718e441f8f1c611a653db9f2f7" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="daisy_3.10.31-1.1.0_alpha" >
+  <remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
+  <project remote="guacamayo" revision="b370de472e14f3b6a562fa8fcdf9d012613cdcb7" name="meta-clutter" path="sources/meta-clutter"/>
+
+  <remote fetch="git://sw-git01-tx30.am.freescale.net" name="fsl-release"/>
+
+  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="daisy_3.10.31-1.1.0_beta" >
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
   </project>
 
