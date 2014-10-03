@@ -36,7 +36,7 @@
 
   <project remote="fsl-release" name="meta-fsl-mpu-internal" path="sources/meta-fsl-mpu-internal" revision="master" >
      <copyfile src="tools/fsl-setup-internal-build.sh" dest="fsl-setup-internal-build.sh"/>
-     <copyfile src="iotg-internal/recipes-iotg/tools/fsl-iotg-internal-setup.sh" dest="fsl-iotg-internal-setup.sh"/>
+     <copyfile src="iotg-internal/tools/fsl-iotg-internal-setup.sh" dest="fsl-iotg-internal-setup.sh"/>
   </project>
 
 </manifest>
