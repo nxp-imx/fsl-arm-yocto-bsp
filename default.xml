@@ -9,7 +9,7 @@
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
 
-  <project remote="yocto" revision="6c3d1192c79d5b513169a734818f436b1ce645f0" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="0db15bb0626b16201d0767d87e91c61828a449ef" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="master" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
   <project remote="oe" revision="master" name="meta-openembedded" path="sources/meta-openembedded"/>
