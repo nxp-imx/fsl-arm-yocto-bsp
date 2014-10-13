@@ -9,22 +9,22 @@
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
 
-  <project remote="yocto" revision="dora" name="poky" path="sources/poky"/>
-  <project remote="yocto" revision="dora" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
+  <project remote="yocto" revision="6d0a1893d1e2df20b62296ec2cc80924cbab8e90" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="5fdb620c09df11e70434092f675c891e0ba84108" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
-  <project remote="oe" revision="dora" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="oe" revision="ee173678383683e972c7d4d6f0ef5790bfa50274" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <project remote="freescale" revision="dora" name="fsl-community-bsp-base" path="sources/base">
+  <project remote="freescale" revision="f2026cdef0c518485c91fa47511d37b5534dbe6a" name="fsl-community-bsp-base" path="sources/base">
         <copyfile dest="README" src="README"/>
         <copyfile dest="setup-environment" src="setup-environment"/>
   </project>
 
-  <project remote="freescale" revision="dora" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
-  <project remote="freescale" revision="dora" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
+  <project remote="freescale" revision="375f89b70655be2a17bbde36de6adb4e4a5a6975" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
+  <project remote="freescale" revision="5a12677ad000a926d23c444266722a778ea228a7" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
-  <project remote="OSSystems" revision="dora" name="meta-browser" path="sources/meta-browser" />
+  <project remote="OSSystems" revision="c94a11b2f0811961f56b75c699f299d3d90ecf1a" name="meta-browser" path="sources/meta-browser" />
 
-  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="dora_3.10.17-1.0.1">
+  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="dora_3.10.17-1.0.2">
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh" />
   </project>
   </manifest>
