@@ -22,9 +22,7 @@
   <project remote="freescale" revision="daisy" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
   <project remote="freescale" revision="daisy" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
-  <!-- Chromium has been updated to version 38.0.2125.101, but the chromium git repo is currently -->
-  <!-- failing. So now we specify the previous version 37.0.2062.94 to fix incremental builds. -->
-  <project remote="OSSystems" revision="1ed7500cc43706165ccac8daccba47124e63d3eb" name="meta-browser" path="sources/meta-browser" />
+  <project remote="OSSystems" revision="master" name="meta-browser" path="sources/meta-browser" />
   <project remote="QT5" revision="daisy" name="meta-qt5" path="sources/meta-qt5" />
 
   <remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
