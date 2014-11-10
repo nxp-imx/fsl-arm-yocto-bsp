@@ -7,26 +7,21 @@
   <remote fetch="git://github.com/Freescale" name="freescale"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
-  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
 
-  <project remote="yocto" revision="daisy" name="poky" path="sources/poky"/>
-  <project remote="yocto" revision="daisy" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
+  <project remote="yocto" revision="994b637d5808ef6bfcf9eab1c1526ce2e717b88c" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="9bc540eec9a7e280af13371ea70650fcc47ea627" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
-  <project remote="oe" revision="daisy" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="oe" revision="8065dd8456913457a0114ddb2b4bd4842847b2a3" name="meta-openembedded" path="sources/meta-openembedded"/>
 
   <project remote="freescale" revision="daisy" name="fsl-community-bsp-base" path="sources/base">
 	<copyfile dest="README" src="README"/>
 	<copyfile dest="setup-environment" src="setup-environment"/>
   </project>
 
-  <project remote="freescale" revision="daisy" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
-  <project remote="freescale" revision="daisy" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
+  <project remote="freescale" revision="e1085deb3d915d2a95a65cceadc77c6de0dadfb6" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
+  <project remote="freescale" revision="f141c7d1158b8addbd6f1ed047a1b47c2ed85f8f" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
-  <project remote="OSSystems" revision="master" name="meta-browser" path="sources/meta-browser" />
-  <project remote="QT5" revision="daisy" name="meta-qt5" path="sources/meta-qt5" />
-
-  <remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
-  <project remote="guacamayo" revision="b370de472e14f3b6a562fa8fcdf9d012613cdcb7" name="meta-clutter" path="sources/meta-clutter"/>
+  <project remote="OSSystems" revision="63963cc56c8d0291779693e62b66cb16e5c86883" name="meta-browser" path="sources/meta-browser" />
 
   <remote fetch="git://sw-git01-tx30.am.freescale.net" name="fsl-release"/>
 
