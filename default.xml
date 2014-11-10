@@ -8,7 +8,7 @@
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
 
-  <project remote="yocto" revision="994b637d5808ef6bfcf9eab1c1526ce2e717b88c" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="30b8d9378b8260e452552b806610dc9b6fe0b69f" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="9bc540eec9a7e280af13371ea70650fcc47ea627" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
   <project remote="oe" revision="8065dd8456913457a0114ddb2b4bd4842847b2a3" name="meta-openembedded" path="sources/meta-openembedded"/>
