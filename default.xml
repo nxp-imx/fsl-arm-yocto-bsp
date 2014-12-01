@@ -7,6 +7,7 @@
   <remote fetch="git://github.com/Freescale" name="freescale"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="git://github.com/wolfgar" name="wolfgar"/>
 
   <project remote="yocto" revision="30b8d9378b8260e452552b806610dc9b6fe0b69f" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="9bc540eec9a7e280af13371ea70650fcc47ea627" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
@@ -23,9 +24,11 @@
 
   <project remote="OSSystems" revision="63963cc56c8d0291779693e62b66cb16e5c86883" name="meta-browser" path="sources/meta-browser" />
 
+  <project remote="wolfgar" revision="daisy" name="meta-stef" path="sources/meta-stef" />
+
   <remote fetch="git://sw-git01-tx30.am.freescale.net" name="fsl-release"/>
 
-  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="daisy_3.10.17-1.0.0_iotg" >
+  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="daisy_3.10.17-1.0.2_iotg" >
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
   </project>
 
