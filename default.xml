@@ -23,7 +23,7 @@
   <project remote="freescale" revision="dizzy" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
   <project remote="OSSystems" revision="master" name="meta-browser" path="sources/meta-browser" />
-  <project remote="QT5" revision="master" name="meta-qt5" path="sources/meta-qt5" />
+  <project remote="QT5" revision="dizzy" name="meta-qt5" path="sources/meta-qt5" />
 
   <remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
   <project remote="guacamayo" revision="master" name="meta-clutter" path="sources/meta-clutter"/>
