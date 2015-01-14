@@ -10,23 +10,23 @@
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
 
   <project remote="yocto" revision="f20e4c0cf6ddb29a1aad6e7b095e1472e81d330c" name="poky" path="sources/poky"/>
-  <project remote="yocto" revision="dizzy" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
+  <project remote="yocto" revision="b74e5e690d8d4e149ea9de3f0fcca37bad93935f" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
-  <project remote="oe" revision="master" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="oe" revision="7bbacd0023fa1111da94ba0b2aafd7d872301ffe" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <project remote="freescale" revision="dizzy" name="fsl-community-bsp-base" path="sources/base">
+  <project remote="freescale" revision="89c605386ec81d64b38562acbc66942964fad971" name="fsl-community-bsp-base" path="sources/base">
 	<copyfile dest="README" src="README"/>
 	<copyfile dest="setup-environment" src="setup-environment"/>
   </project>
 
-  <project remote="freescale" revision="dizzy" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
-  <project remote="freescale" revision="dizzy" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
+  <project remote="freescale" revision="b32528c10caac5e85f2b5efe0e5b95322dd68ace" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
+  <project remote="freescale" revision="48cb0bcdd226d2e7eee1fdc222713e1dff93342c" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
-  <project remote="OSSystems" revision="master" name="meta-browser" path="sources/meta-browser" />
-  <project remote="QT5" revision="dizzy" name="meta-qt5" path="sources/meta-qt5" />
+  <project remote="OSSystems" revision="63963cc56c8d0291779693e62b66cb16e5c86883" name="meta-browser" path="sources/meta-browser" />
+  <project remote="QT5" revision="41c5daa84af4466bfc9aa61f6f772c68470a628b" name="meta-qt5" path="sources/meta-qt5" />
 
   <remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
-  <project remote="guacamayo" revision="master" name="meta-clutter" path="sources/meta-clutter"/>
+  <project remote="guacamayo" revision="b370de472e14f3b6a562fa8fcdf9d012613cdcb7" name="meta-clutter" path="sources/meta-clutter"/>
 
   <remote fetch="git://sw-git01-tx30.am.freescale.net" name="fsl-release"/>
 
