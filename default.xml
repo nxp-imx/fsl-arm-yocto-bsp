@@ -34,7 +34,7 @@
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
   </project>
 
-  <project remote="fsl-release" name="meta-fsl-mpu-internal" path="sources/meta-fsl-mpu-internal" revision="master" >
+  <project remote="fsl-release" name="meta-fsl-mpu-internal" path="sources/meta-fsl-mpu-internal" revision="dizzy-3.14.28-1.0.0_ga" >
      <copyfile src="tools/fsl-setup-internal-build.sh" dest="fsl-setup-internal-build.sh"/>
   </project>
 
