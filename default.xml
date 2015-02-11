@@ -28,7 +28,7 @@
   <remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
   <project remote="guacamayo" revision="b370de472e14f3b6a562fa8fcdf9d012613cdcb7" name="meta-clutter" path="sources/meta-clutter"/>
 
-  <remote fetch="git://sw-git01-tx30.am.freescale.net" name="fsl-release"/>
+  <remote fetch="http://sw-stash.freescale.net/scm/imx/meta-fsl-bsp-release.git" name="fsl-release"/>
 
   <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="dizzy_3.14.28-1.0.0_GA" >
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
