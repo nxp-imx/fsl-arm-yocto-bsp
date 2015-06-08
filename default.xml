@@ -10,8 +10,8 @@
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
 
-  <project remote="yocto" revision="f366ff2c03885f0ac17415dfbc8f25b2b760b841" name="poky" path="sources/poky"/>
-  <project remote="yocto" revision="0cfe91f3291d5c333f7fe657df397ddb520b6d31" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
+  <project remote="yocto" revision="508c4cac320d78a983ce105a78c0599102e2c349" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="270599a407a36f1ff0cdbe5fcfc03f1a3a61789c" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
   <project remote="oe" revision="5b0305d9efa4b5692cd942586fb7aa92dba42d59" name="meta-openembedded" path="sources/meta-openembedded"/>
 
@@ -20,13 +20,13 @@
         <copyfile dest="setup-environment" src="setup-environment"/>
   </project>
 
-  <project remote="freescale" revision="bc1269b1be74f319f492090ffd3d836e25d8a559" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
-  <project remote="freescale" revision="1ae8a2d8e9899f0182fa5227acc2b7b6c78039ff" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
+  <project remote="freescale" revision="158616ea3919c0d1c4c0dfc7fc8023a99cf0e7eb" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
+  <project remote="freescale" revision="836bdf5a9d500ed258f1ddc07d89eca74a704098" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
-  <project remote="OSSystems" revision="30b8d6b3d0d6501c56ef6967a2fa73a3d4bf5fe9" name="meta-browser" path="sources/meta-browser" />
-  <project remote="QT5" revision="3ccdc239b02aca03dc1e9316b7c5c870b3b59368" name="meta-qt5" path="sources/meta-qt5" />
+  <project remote="OSSystems" revision="0cc0419a6a778402f93936859cdacf01eb756bb1" name="meta-browser" path="sources/meta-browser" />
+  <project remote="QT5" revision="fido" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="fido_3.14.38_6QP_beta" >
+  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="fido_3.14.38_6UL7D_beta" >
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
   </project>
 
