@@ -24,7 +24,7 @@
   <project remote="freescale" revision="836bdf5a9d500ed258f1ddc07d89eca74a704098" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
   <project remote="OSSystems" revision="0cc0419a6a778402f93936859cdacf01eb756bb1" name="meta-browser" path="sources/meta-browser" />
-  <project remote="QT5" revision="fido" name="meta-qt5" path="sources/meta-qt5" />
+  <project remote="QT5" revision="3ccdc239b02aca03dc1e9316b7c5c870b3b59368" name="meta-qt5" path="sources/meta-qt5" />
 
   <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="fido_3.14.38_6UL7D_beta" >
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
