@@ -10,7 +10,7 @@
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5" name="QT5"/>
   <remote fetch="git://github.com/wolfgar" name="wolfgar"/>
-  <remote fetch="ssh://git@sw-stash.freescale.net/imx" name="fsl-internal"/>
+  <remote fetch="http://sw-stash.freescale.net/scm/imx/meta-fsl-iotg.git" name="fsl-internal"/>
 
   <project remote="yocto" revision="30b8d9378b8260e452552b806610dc9b6fe0b69f" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="9bc540eec9a7e280af13371ea70650fcc47ea627" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
