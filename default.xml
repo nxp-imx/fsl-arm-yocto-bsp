@@ -23,7 +23,7 @@
   <project remote="freescale" revision="0786aa76f4772ea7b83d4bab10567c4530b2d1bc" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
   <project remote="freescale" revision="836bdf5a9d500ed258f1ddc07d89eca74a704098" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
-  <project remote="OSSystems" revision="fdb555cdaa1ae090f97bf6ab9736e4c158509a92" name="meta-browser" path="sources/meta-browser" />
+  <project remote="OSSystems" revision="30b8d6b3d0d6501c56ef6967a2fa73a3d4bf5fe9" name="meta-browser" path="sources/meta-browser" />
   <project remote="QT5" revision="fc026381545650e10fdd488d5b2a3b2d78f87793" name="meta-qt5" path="sources/meta-qt5" />
 
   <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="fido_3.14.38_6QP_ga" >
