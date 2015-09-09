@@ -3,18 +3,46 @@ Freescale's Community Yocto BSP
 
 To get the BSP you need to have `repo` installed and use it as:
 
-Install the `repo` utility:
+Install the `repo` utility (only need to do once):
+--------------------------------------------------
 
 $: mkdir ~/bin
 $: curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
 $: chmod a+x ~/bin/repo
-
-Download the BSP source:
-
 $: PATH=${PATH}:~/bin
+
+Download the BSP Yocto Project Environment into your directory:
+-------------------------------------------
+
 $: mkdir fsl-arm-yocto-bsp
 $: cd fsl-arm-yocto-bsp
 $: repo init -u http://sw-stash.freescale.net/scm/imx/fsl-arm-yocto-bsp.git -b yocto-next
 $: repo sync
 
+Setup for a particular graphical backend.
+-----------------------------------------
+The examples uses imx6sabresd MACHINE but substitute with whatever you are using:
+
+Setup for X11.
+$: MACHINE=imx6qsabresd DISTRO=fsl-imx-x11 source ./fsl-setup-release.sh -b bld-x11
+
+Setup for Wayland.
+$: MACHINE=imx6qsabresd DISTRO=fsl-imx-wayland source ./fsl-setup-release.sh -b bld-wayland
+
+Setup for Wayland and X11.
+$: MACHINE=imx6qsabresd DISTRO=fsl-imx-xwayland source ./fsl-setup-release.sh -b bld-xwayland
+
+Setup for DirectFB.
+$: MACHINE=imx6qsabresd DISTRO=fsl-imx-dfb source ./fsl-setup-release.sh -b bld-dfb
+
+Setup for Frame Buffer.
+$: MACHINE=imx6qsabresd DISTRO=fsl-imx-fb source ./fsl-setup-release.sh -b bld-fb
+
+Build an image:
+---------------
+bitbake <image recipe>
+
+Some image recipes:
+fsl-image-gui - full image with demos and tests used for testing with graphics, no QT.
+fsl-umage-qt5 - fsl-image-gui with QT 5.
 
