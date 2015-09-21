@@ -33,8 +33,8 @@
   <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="daisy_3.10.53-1.1.1_patch" >
      <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
   </project>
-  <project remote="fsl-internal" name="meta-fsl-iotg" path="sources/meta-fsl-iotg" revision="master" />
-  <project remote="fsl-internal" name="meta-fsl-iotg-internal" path="sources/meta-fsl-iotg-internal" revision="master" >
+  <project remote="fsl-internal" name="meta-fsl-iotg" path="sources/meta-fsl-iotg" revision="release/daisy" />
+  <project remote="fsl-internal" name="meta-fsl-iotg-internal" path="sources/meta-fsl-iotg-internal" revision="release/daisy" >
      <linkfile src="tools/fsl-iotg-internal-setup.sh" dest="fsl-iotg-internal-setup.sh"/>
   </project>
 
