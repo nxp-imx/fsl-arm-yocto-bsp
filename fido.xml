@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="git://git.freescale.com/imx" name="fsl-release"/>
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://github.com/Freescale" name="freescale"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="git://github.com/meta-qt5" name="QT5"/>
+  <remote fetch="git://github.com/wolfgar" name="wolfgar"/>
+  <remote fetch="http://sw-stash.freescale.net/scm/imx" name="fsl-internal"/>
+
+  <project remote="yocto" revision="83aa565d93aacae484976562ef1ae8dbbb6b2bc0" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="c5326c90d6754c8630504ae29244907b0841c3a9" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
+
+  <project remote="oe" revision="10d3c8f85280a0bf867a8e4f84bcda81c290d28e" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+  <project remote="freescale" revision="89c605386ec81d64b38562acbc66942964fad971" name="fsl-community-bsp-base" path="sources/base">
+	<linkfile dest="README" src="README"/>
+	<linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+  <project remote="freescale" revision="436b86e3421736216412bdbb21cd9cb08c758c75" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
+  <project remote="freescale" revision="836bdf5a9d500ed258f1ddc07d89eca74a704098" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
+  <project remote="OSSystems" revision="4b27058a8275a5310161459c9bb8f4c52a77762c" name="meta-browser" path="sources/meta-browser" />
+  <project remote="QT5" revision="fc026381545650e10fdd488d5b2a3b2d78f87793" name="meta-qt5" path="sources/meta-qt5"/>
+  <project remote="wolfgar" revision="daisy" name="meta-stef" path="sources/meta-stef" />
+  <remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
+  <project remote="guacamayo" revision="master" name="meta-clutter" path="sources/meta-clutter"/>
+
+  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="fido_3.14.38_6UL_ga" >
+     <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
+  </project>
+  <project remote="fsl-internal" name="meta-fsl-iotg" path="sources/meta-fsl-iotg" revision="master" />
+  <project remote="fsl-internal" name="meta-fsl-iotg-internal" path="sources/meta-fsl-iotg-internal" revision="master" >
+     <linkfile src="tools/fsl-iotg-internal-setup.sh" dest="fsl-iotg-internal-setup.sh"/>
+  </project>
+
+</manifest>
