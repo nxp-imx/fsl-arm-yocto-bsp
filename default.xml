@@ -12,7 +12,7 @@
   <project remote="yocto" revision="jethro" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="jethro" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
-  <project remote="oe" revision="master" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="oe" revision="jethro" name="meta-openembedded" path="sources/meta-openembedded"/>
 
   <project remote="freescale" revision="jethro" name="fsl-community-bsp-base" path="sources/base">
 	<copyfile dest="README" src="README"/>
@@ -23,7 +23,7 @@
   <project remote="freescale" revision="jethro" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
   <project remote="OSSystems" revision="master" name="meta-browser" path="sources/meta-browser" />
-  <project remote="QT5" revision="master" name="meta-qt5" path="sources/meta-qt5" />
+  <project remote="QT5" revision="jethro" name="meta-qt5" path="sources/meta-qt5" />
 
   <remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
   <project remote="guacamayo" revision="master" name="meta-clutter" path="sources/meta-clutter"/>
