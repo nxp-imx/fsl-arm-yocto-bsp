@@ -12,7 +12,7 @@ Download the BSP source:
 
 $ mkdir iotg
 $ cd iotg
-$ repo init -u git://sw-git.freescale.net/fsl-arm-yocto-bsp.git -b daisy-3.10.53-1.1.0_iotg [-m fido]
+$ repo init -u http://<user>@sw-stash.freescale.net/scm/imx/fsl-arm-yocto-bsp.git -b daisy-3.10.53-1.1.0_iotg [-m fido.xml]
 $ repo sync
 
 The default BSP (i.e., no -m option) is for daisy.
