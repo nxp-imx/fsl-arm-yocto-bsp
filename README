@@ -16,7 +16,7 @@ Download the BSP Yocto Project Environment into your directory:
 
 $: mkdir fsl-arm-yocto-bsp
 $: cd fsl-arm-yocto-bsp
-$: repo init -u http://sw-stash.freescale.net/scm/imx/fsl-arm-yocto-bsp.git -b yocto-next
+$: repo init -u http://sw-stash.freescale.net/scm/imx/fsl-arm-yocto-bsp.git -b jethro-4.1.15-1.0.0_ga
 $: repo sync
 
 Setup for a particular graphical backend.
@@ -26,14 +26,8 @@ The examples uses imx6sabresd MACHINE but substitute with whatever you are using
 Setup for X11.
 $: MACHINE=imx6qsabresd DISTRO=fsl-imx-x11 source ./fsl-setup-release.sh -b bld-x11
 
-Setup for Wayland.
-$: MACHINE=imx6qsabresd DISTRO=fsl-imx-wayland source ./fsl-setup-release.sh -b bld-wayland
-
 Setup for Wayland and X11.
 $: MACHINE=imx6qsabresd DISTRO=fsl-imx-xwayland source ./fsl-setup-release.sh -b bld-xwayland
-
-Setup for DirectFB.
-$: MACHINE=imx6qsabresd DISTRO=fsl-imx-dfb source ./fsl-setup-release.sh -b bld-dfb
 
 Setup for Frame Buffer.
 $: MACHINE=imx6qsabresd DISTRO=fsl-imx-fb source ./fsl-setup-release.sh -b bld-fb
