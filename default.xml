@@ -3,39 +3,47 @@
 
   <default sync-j="2"/>
 
-  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+<remote fetch="git://git.yoctoproject.org" name="yocto"/>
   <remote fetch="git://github.com/Freescale" name="freescale"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
 
-  <project remote="yocto" revision="dd0ba9ea4a11ab15348d4fe3574e4b28784db82f" name="poky" path="sources/poky"/>
+<remote fetch="https://git.automotivelinux.org/gerrit/AGL" name="AGL"/>
+
+  <project remote="yocto" revision="2fb7ee2628e23d7efc9b041bb9daae7c4a8de541" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="35b8b9bd9863de208ab60e33b55f10ee43e2619b" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
-  <project remote="oe" revision="ad6133a2e95f4b83b6b3ea413598e2cd5fb3fd90" name="meta-openembedded" path="sources/meta-openembedded"/>
+<project remote="oe" revision="ad6133a2e95f4b83b6b3ea413598e2cd5fb3fd90" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <project remote="freescale" revision="3a9c59399dbcf4790578125f016c6e86aff43367" name="fsl-community-bsp-base" path="sources/base">
+<project remote="freescale" revision="3a9c59399dbcf4790578125f016c6e86aff43367" name="fsl-community-bsp-base" path="sources/base">
 	<copyfile dest="README" src="README"/>
 	<copyfile dest="setup-environment" src="setup-environment"/>
-  </project>
+</project>
 
   <project remote="freescale" revision="e200df91b70da254461c59082ddd5db0a3c415a2" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
   <project remote="freescale" revision="2231e946e7a94d096394f2b2477e8184c9bbde7b" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
-  <project remote="OSSystems" revision="b6d46d69a261fe6bd7c1e9811dc2a9bbd0b79aeb" name="meta-browser" path="sources/meta-browser" />
+<project remote="OSSystems" revision="b6d46d69a261fe6bd7c1e9811dc2a9bbd0b79aeb" name="meta-browser" path="sources/meta-browser" />
   <project remote="QT5" revision="d5536e34ec985c82b621448ab4325e5cbba38560" name="meta-qt5" path="sources/meta-qt5" />
 
-  <remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
+<remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
   <project remote="guacamayo" revision="b370de472e14f3b6a562fa8fcdf9d012613cdcb7" name="meta-clutter" path="sources/meta-clutter"/>
 
+<project remote="AGL" revision="e14106703bd02e161bc5518c73be8a07659891cd" name="meta-agl" path="sources/meta-agl" />
+  <project remote="AGL" revision="75f103846494e30b6fea489bd9020f17e4256f74" name="meta-agl-demo" path="sources/meta-agl-demo" />
   <remote fetch="http://sw-stash.freescale.net/scm/imx" name="fsl-release"/>
 
-  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="jethro_4.1.15-1.0.0_ga" >
+<project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="jethro_4.1.15-1.0.0_ga" >
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
-  </project>
+</project>
 
   <project remote="fsl-release" name="meta-fsl-mpu-internal" path="sources/meta-fsl-mpu-internal" revision="jethro-4.1.15-1.0.0_ga" >
      <copyfile src="tools/fsl-setup-internal-build.sh" dest="fsl-setup-internal-build.sh"/>
-  </project>
+</project>
+
+  <project remote="fsl-release" revision="dc40804b3a7b5a16f37e42a16b4b6edaac4c9aff" name="meta-nxp-agl" path="sources/meta-nxp-agl">
+  <copyfile src="tools/nxp-setup-agl.sh" dest="nxp-setup-agl.sh"/>
+</project>
 
 </manifest>
