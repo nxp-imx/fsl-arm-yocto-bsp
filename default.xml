@@ -31,8 +31,12 @@
 
   <remote fetch="http://sw-stash.freescale.net/scm/imx" name="fsl-internal"/>
 
-  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="jethro_4.1.15-1.0.0_ga" >
+  <project remote="fsl-internal" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="jethro_4.1.15-1.0.0_ga" >
      <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
+  </project>
+
+  <project remote="fsl-internal" name="meta-fsl-mpu-internal" path="sources/meta-fsl-mpu-internal" revision="jethro-4.1.15-1.0.0_ga" >
+     <linkfile src="imx/tools/fsl-setup-internal-build.sh" dest="fsl-setup-internal-build.sh"/>
   </project>
 
   <project remote="fsl-internal" name="meta-fsl-iotg" path="sources/meta-fsl-iotg" revision="master" />
