@@ -37,6 +37,6 @@ $: bitbake agl-image-minimal
 $: bitbake agl-image-ivi
 $: bitbake agl-image-weston
 
-he CES2016 demo is in this image.  To run it, you need to connect an HDMI monitor in the "portrait" orientation.
+The CES2016 demo is in this image.  To run it, you need to connect an HDMI monitor in the "portrait" orientation.
 The dimensions in the demos are hard coded.  The files used are in /opt/AGL/CES2016 and /etc/xdg/weston.  
 
