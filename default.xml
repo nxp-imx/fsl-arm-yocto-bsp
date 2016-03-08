@@ -39,8 +39,8 @@
      <linkfile src="imx/tools/fsl-setup-internal-build.sh" dest="fsl-setup-internal-build.sh"/>
   </project>
 
-  <project remote="fsl-internal" name="meta-fsl-iotg" path="sources/meta-fsl-iotg" revision="jethro-next" />
-  <project remote="fsl-internal" name="meta-fsl-iotg-internal" path="sources/meta-fsl-iotg-internal" revision="jethro-next" >
+  <project remote="fsl-internal" name="meta-fsl-iotg" path="sources/meta-fsl-iotg" revision="master" />
+  <project remote="fsl-internal" name="meta-fsl-iotg-internal" path="sources/meta-fsl-iotg-internal" revision="master" >
      <linkfile src="tools/fsl-iotg-internal-setup.sh" dest="fsl-iotg-internal-setup.sh"/>
   </project>
 

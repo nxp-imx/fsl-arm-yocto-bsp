@@ -12,7 +12,14 @@ Download the BSP source:
 
 $ mkdir iotg
 $ cd iotg
-$ repo init -u http://<user>@sw-stash.freescale.net/scm/imx/fsl-arm-yocto-bsp.git -b daisy-3.10.53-1.1.0_iotg [-m fido.xml]
+$ repo init -u http://<user>@sw-stash.freescale.net/scm/imx/fsl-arm-yocto-bsp.git -b jethro-4.1.15-1.0.0_ga-iotg
 $ repo sync
 
-The default BSP (i.e., no -m option) is for daisy.
+Setup the build directory:
+
+$ EULA=1 DISTRO=iotg-thread MACHINE=imx6ulevk-iotg . ./fsl-setup-release.sh -b <build-dir>
+$ DISTRO=iotg-thread . ../fsl-iotg-internal-setup.sh
+
+Build:
+
+$ bitbake fsl-image-iotg-bsp
