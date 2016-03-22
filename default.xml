@@ -35,7 +35,7 @@
      <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
   </project>
 
-  <project remote="fsl-internal" name="meta-fsl-mpu-internal" path="sources/meta-fsl-mpu-internal" revision="feature/YOCIMX-533-final-copy-extension" >
+  <project remote="fsl-internal" name="meta-fsl-mpu-internal" path="sources/meta-fsl-mpu-internal" revision="jethro-4.1.15-1.0.0_ga" >
      <linkfile src="imx/tools/fsl-setup-internal-build.sh" dest="fsl-setup-internal-build.sh"/>
   </project>
 
