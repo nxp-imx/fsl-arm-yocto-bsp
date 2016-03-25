@@ -29,22 +29,13 @@
   <remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
   <project remote="guacamayo" revision="b370de472e14f3b6a562fa8fcdf9d012613cdcb7" name="meta-clutter" path="sources/meta-clutter"/>
 
-  <remote fetch="http://sw-stash.freescale.net/scm/imx" name="fsl-internal"/>
-
-  <project remote="fsl-internal" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="jethro_4.1.15-1.0.0_ga" >
+  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="jethro_4.1.15-1.0.0_ga" >
      <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
   </project>
 
-  <project remote="fsl-internal" name="meta-fsl-mpu-internal" path="sources/meta-fsl-mpu-internal" revision="jethro-4.1.15-1.0.0_ga" >
-     <linkfile src="imx/tools/fsl-setup-internal-build.sh" dest="fsl-setup-internal-build.sh"/>
+  <remote fetch="http://sw-stash.freescale.net/scm/imx" name="fsl-internal"/>
+  <project remote="fsl-internal" name="meta-fsl-iotg" path="sources/meta-fsl-iotg" revision="master" >
+     <linkfile src="tools/fsl-iotg-setup.sh" dest="fsl-iotg-setup.sh"/>
   </project>
-
-  <project remote="fsl-internal" name="meta-fsl-iotg" path="sources/meta-fsl-iotg" revision="master" />
-  <project remote="fsl-internal" name="meta-fsl-iotg-internal" path="sources/meta-fsl-iotg-internal" revision="master" >
-     <linkfile src="tools/fsl-iotg-internal-setup.sh" dest="fsl-iotg-internal-setup.sh"/>
-  </project>
-
-  <remote fetch="git://github.com/wolfgar" name="wolfgar"/>
-  <project remote="wolfgar" revision="daisy" name="meta-stef" path="sources/meta-stef" />
 
 </manifest>

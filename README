@@ -12,13 +12,13 @@ Download the BSP source:
 
 $ mkdir iotg
 $ cd iotg
-$ repo init -u http://<user>@sw-stash.freescale.net/scm/imx/fsl-arm-yocto-bsp.git -b jethro-4.1.15-1.0.0_ga-iotg
+$ repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1.15-1.0.0_iotg-demo
 $ repo sync
 
 Setup the build directory:
 
-$ EULA=1 DISTRO=iotg-thread MACHINE=imx6ulevk-iotg . ./fsl-setup-release.sh -b <build-dir>
-$ DISTRO=iotg-thread . ../fsl-iotg-internal-setup.sh
+$ DISTRO=iotg-thread MACHINE=imx6ulevk-iotg . ./fsl-setup-release.sh -b build
+$ DISTRO=iotg-thread . ../fsl-iotg-setup.sh
 
 Build:
 
