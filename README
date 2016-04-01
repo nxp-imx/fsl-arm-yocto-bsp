@@ -4,6 +4,7 @@ This builds the Wayland-Weston AGL image with the basic AGL interface.
 Demos can then be run on top of this.
 
 This image has only been run on i.MX 6QP Sabre and Sabre Auto.
+It is not supported nor tested.  It is simply a demo showing that the basic image runs.
 
 To get the BSP you need to have `repo` installed.
 
