@@ -30,4 +30,8 @@
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
   </project>
 
+  <project remote="fsl-release" name="meta-nxp-xbmc" path="sources/meta-nxp-xbmc" revision="master" >
+     <copyfile src="tools/nxp-xbmc-setup.sh" dest="nxp-xbmc-setup.sh"/>
+  </project>
+
 </manifest>
