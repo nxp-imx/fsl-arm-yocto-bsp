@@ -34,9 +34,7 @@
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
   </project>
 
- <remote fetch="http://sw-stash.freescale.net/scm/imx" name="fsl-release-local"/>
-
-  <project remote="fsl-release-local" revision="jethro" name="meta-nxp-agl" path="sources/meta-nxp-agl">
+  <project remote="fsl-release" revision="jethro" name="meta-nxp-agl" path="sources/meta-nxp-agl">
       <copyfile src="tools/nxp-setup-agl.sh" dest="nxp-setup-agl.sh"/>
   </project>
 
