@@ -1,3 +1,6 @@
+These are the changes made by patch releases to the original GA release. 
+Tags listed below can be used to access any release listed here.
+
 Date 4/8/2016
 4.1.15-1.1.0 - tag - meta-fsl-bsp-release tag imx_4.1.15_1.1.0_ga
 - Patch release for i.MX 6UltraLite for silicon revision 1.1 
