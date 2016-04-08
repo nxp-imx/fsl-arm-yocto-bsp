@@ -3,15 +3,15 @@ Freescale's Community Yocto BSP
 
 To get the BSP you need to have `repo` installed and use it as:
 
-Install the `repo` utility:
-
+Install the `repo` utility: (only need to do once):
+--------------------------------------------------
 $: mkdir ~/bin
 $: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo  > ~/bin/repo
 $: chmod a+x ~/bin/repo
 $: PATH=${PATH}:~/bin
 
-Download the BSP Yocto Project Environment
-
+Download the BSP Yocto Project Environment into your directory:
+-------------------------------------------
 $: mkdir fsl-arm-yocto-bsp
 $: cd fsl-arm-yocto-bsp
 $: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1.15-1.0.0_ga
@@ -27,17 +27,29 @@ To checkout the GA release without patches do the following:
 $: cd sources/meta-fsl-bsp-release
 $: git checkout imx_4.1.15_1.0.0_ga
 
-Setup for X11
-$: DISTRO=fsl-imx-x11 MACHINE=<machine name> source fsl-setup-release.sh -b build-x11
+Setup for a particular graphical backend.
+-----------------------------------------
+The examples uses imx6sabresd MACHINE but substitute with whatever you are using:
 
-Setup for FB - Frame Buffer
-$: DISTRO=fsl-imx-fb MACHINE=<machine name> source fsl-setup-release.sh -b build-fb
+Setup for X11.
+$: MACHINE=imx6qsabresd DISTRO=fsl-imx-x11 source ./fsl-setup-release.sh -b bld-x11
 
-Setup for XWayland - use DISTRO=fsl-imx-wayland for just wayland
-$: DISTRO=fsl-imx-xwayland MACHINE=<machine name> source fsl-setup-release.sh -b build-xwayland
+Setup for Wayland.
+$: MACHINE=imx6qsabresd DISTRO=fsl-imx-wayland source ./fsl-setup-release.sh -b bld-wayland
 
-Build non Qt5 image for graphics backend X11, FB and Xwayland
-$: bitbake fsl-image-gui
+Setup for Wayland and X11.
+$: MACHINE=imx6qsabresd DISTRO=fsl-imx-xwayland source ./fsl-setup-release.sh -b bld-xwayland
 
-Build Qt5 image for graphics backend X11, FB and Xwayland
-$: bitbake fsl-image-qt5
+Setup for DirectFB.
+$: MACHINE=imx6qsabresd DISTRO=fsl-imx-dfb source ./fsl-setup-release.sh -b bld-dfb
+
+Setup for Frame Buffer.
+$: MACHINE=imx6qsabresd DISTRO=fsl-imx-fb source ./fsl-setup-release.sh -b bld-fb
+
+Build an image:
+---------------
+bitbake <image recipe>
+
+Some image recipes:
+fsl-image-gui - full image with demos and tests used for testing with graphics, no QT.
+fsl-umage-qt5 - fsl-image-gui with QT 5.
