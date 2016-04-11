@@ -29,6 +29,7 @@
 
   <project remote="AGL" revision="4904012b7748fd096681dda66f53ec5b06438495" name="meta-agl" path="sources/meta-agl" />
   <project remote="AGL" revision="d7dc839ad442145e364fca6f9cfd7938fe0e2db9" name="meta-agl-demo" path="sources/meta-agl-demo" />
+  <project remote="AGL" revision="0c47d0135ca0739377c425b6dda107d6c47491c4" name="DemoApps/CES2016" path="sources/CES2016" />
 
   <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="jethro_4.1.15-1.0.0_ga" >
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
