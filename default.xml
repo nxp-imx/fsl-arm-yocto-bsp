@@ -16,7 +16,6 @@
   <project remote="oe" revision="ad6133a2e95f4b83b6b3ea413598e2cd5fb3fd90" name="meta-openembedded" path="sources/meta-openembedded"/>
 
   <project remote="freescale" revision="3a9c59399dbcf4790578125f016c6e86aff43367" name="fsl-community-bsp-base" path="sources/base">
-	<linkfile dest="README" src="README"/>
 	<linkfile dest="setup-environment" src="setup-environment"/>
   </project>
 
@@ -29,13 +28,9 @@
   <remote fetch="git://github.com/Guacamayo" name="guacamayo"/>
   <project remote="guacamayo" revision="b370de472e14f3b6a562fa8fcdf9d012613cdcb7" name="meta-clutter" path="sources/meta-clutter"/>
 
-  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="jethro_4.1.15-1.0.0_ga" >
-     <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
-  </project>
+  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="jethro_4.1.15-1.0.0_ga"/>
 
   <remote fetch="http://sw-stash.freescale.net/scm/imx" name="fsl-internal"/>
-  <project remote="fsl-internal" name="meta-fsl-iotg" path="sources/meta-fsl-iotg" revision="master" >
-     <linkfile src="tools/fsl-iotg-setup.sh" dest="fsl-iotg-setup.sh"/>
-  </project>
+  <project remote="fsl-internal" name="meta-nxp-iotg" path="sources/meta-nxp-iotg" revision="master"/>
 
 </manifest>

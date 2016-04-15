@@ -1,25 +1,40 @@
-Freescale's IoT Gateway BSP
-===========================
+IoT Gateway Support for Yocto BSP
+=================================
 
-To get the BSP you need to have `repo` installed. Install the `repo` utility:
+The IoT Gateway support layer 'meta-nxp-iotg' provides support for building an
+IoT Gateway Linux image for the NXP i.MX 6UltraLite EVK platform. The layer
+relies on the standard NXP Yocto BSP.
+
+The IoT Gateway support layer provides the following:
+  - router and access point capabilities
+  - various application support packages like python, txthings, and nodejs
+
+To setup the BSP you need to have `repo` installed. Install the `repo` utility:
 
 $ mkdir ~/bin
-$ curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+$ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo  > ~/bin/repo
 $ chmod a+x ~/bin/repo
 $ PATH=${PATH}:~/bin
 
-Download the BSP source:
+Create the BSP directory:
 
 $ mkdir iotg
 $ cd iotg
 $ repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1.15-1.0.0_iotg-demo
+
+Download the BSP:
+
 $ repo sync
 
-Setup the build directory:
+Create the build directory:
 
-$ DISTRO=iotg-thread MACHINE=imx6ulevk-iotg . ./fsl-setup-release.sh -b build
-$ DISTRO=iotg-thread . ../fsl-iotg-setup.sh
+$ MACHINE=imx6ulevk . sources/meta-nxp-iotg/tools/setup-iotg build
+
+If the build directory exists but you're in a new shell:
+
+$ cd iotg
+$ . ./setup-environment build
 
 Build:
 
-$ bitbake fsl-image-iotg-bsp
+$ bitbake nxp-image-iotg
