@@ -1,14 +1,6 @@
 IoT Gateway Support for Yocto BSP
 =================================
 
-The IoT Gateway support layer 'meta-nxp-iotg' provides support for building an
-IoT Gateway Linux image for the NXP i.MX 6UltraLite EVK platform. The layer
-relies on the standard NXP Yocto BSP.
-
-The IoT Gateway support layer provides the following:
-  - router and access point capabilities
-  - various application support packages like python, txthings, and nodejs
-
 To setup the BSP you need to have `repo` installed. Install the `repo` utility:
 
 $ mkdir ~/bin
@@ -26,15 +18,6 @@ Download the BSP:
 
 $ repo sync
 
-Create the build directory:
+Consult the README-iotg for more information:
 
-$ MACHINE=imx6ulevk . sources/meta-nxp-iotg/tools/setup-iotg build
-
-If the build directory exists but you're in a new shell:
-
-$ cd iotg
-$ . ./setup-environment build
-
-Build:
-
-$ bitbake nxp-image-iotg
+$ less README-iotg
