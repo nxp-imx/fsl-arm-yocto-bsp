@@ -16,8 +16,8 @@
   <project remote="oe" revision="ad6133a2e95f4b83b6b3ea413598e2cd5fb3fd90" name="meta-openembedded" path="sources/meta-openembedded"/>
 
   <project remote="freescale" revision="3a9c59399dbcf4790578125f016c6e86aff43367" name="fsl-community-bsp-base" path="sources/base">
-	<linkfile dest="README" src="README"/>
-	<linkfile dest="setup-environment" src="setup-environment"/>
+	<linkfile src="README" dest="README"/>
+	<linkfile src="setup-environment" dest="setup-environment"/>
   </project>
 
   <project remote="freescale" revision="e200df91b70da254461c59082ddd5db0a3c415a2" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
@@ -33,7 +33,7 @@
 
   <remote fetch="http://sw-stash.freescale.net/scm/imx" name="fsl-internal"/>
   <project remote="fsl-internal" name="meta-nxp-iotg" path="sources/meta-nxp-iotg" revision="master">
-	<linkfile dest="README" src="README-iotg"/>
+	<linkfile src="README" dest="README-iotg"/>
   </project>
 
 </manifest>
