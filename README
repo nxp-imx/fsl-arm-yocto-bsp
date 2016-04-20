@@ -40,11 +40,10 @@ $: MACHINE=imx6qsabresd DISTRO=fsl-imx-wayland source ./fsl-setup-release.sh -b 
 Setup for Wayland and X11.
 $: MACHINE=imx6qsabresd DISTRO=fsl-imx-xwayland source ./fsl-setup-release.sh -b bld-xwayland
 
-Setup for DirectFB.
-$: MACHINE=imx6qsabresd DISTRO=fsl-imx-dfb source ./fsl-setup-release.sh -b bld-dfb
-
 Setup for Frame Buffer.
 $: MACHINE=imx6qsabresd DISTRO=fsl-imx-fb source ./fsl-setup-release.sh -b bld-fb
+
+Note DirectFB is not supported in 4.1.15 release.
 
 Build an image:
 ---------------
