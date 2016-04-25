@@ -31,8 +31,7 @@
 
   <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="jethro_4.1.15-1.0.0_ga"/>
 
-  <remote fetch="http://sw-stash.freescale.net/scm/imx" name="fsl-internal"/>
-  <project remote="fsl-internal" name="meta-nxp-iotg" path="sources/meta-nxp-iotg" revision="master">
+  <project remote="fsl-release" name="meta-nxp-iotg" path="sources/meta-nxp-iotg" revision="master">
 	<linkfile src="README" dest="README-iotg"/>
   </project>
 
