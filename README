@@ -43,6 +43,9 @@ $: MACHINE=imx6qsabresd DISTRO=fsl-imx-xwayland source ./fsl-setup-release.sh -b
 Setup for Frame Buffer.
 $: MACHINE=imx6qsabresd DISTRO=fsl-imx-fb source ./fsl-setup-release.sh -b bld-fb
 
+Note if the poky community distro is used then build breaks will happen with some components using
+our meta-fsl-bsp-release layer.
+
 Note DirectFB is not supported in 4.1.15 release.
 
 Build an image:
@@ -51,4 +54,4 @@ bitbake <image recipe>
 
 Some image recipes:
 fsl-image-gui - full image with demos and tests used for testing with graphics, no QT.
-fsl-umage-qt5 - fsl-image-gui with QT 5.
+fsl-image-qt5 - fsl-image-gui with QT 5.5.
