@@ -1,0 +1,11 @@
+Date 5/5/2016
+3.14.52-1.1.1 - meta-fsl-bsp-release tag imx_3.14.52_1.1.1
+Updates for graphics to p8.4 version
+
+Date 1/2/2016
+3.14.52-1.1.0_ga - meta-fsl-bsp-release tag imx_3.14.52_1.1.0_ga
+Updates for 3.14.52.1.1.0 GA release for the following SoC
+- i.MX 6Quad/Dual/Plus/Solo
+- i.MX 6SoloX
+- i.MX 6SoloLite
+- i.MX 6UltraLite
