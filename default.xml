@@ -28,6 +28,7 @@
 
   <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="fido_3.14.52_1.1.0_ga" >
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
+     <copyfile src="imx/README" dest="README-IMXBSP"/>
   </project>
 
 </manifest>
