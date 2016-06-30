@@ -17,7 +17,7 @@ $: cd fsl-arm-yocto-bsp
 $: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1.15-1.0.0_ga
 $: repo sync
 
-Note this downloads the latest patches on top of the 4.1.15-1.0.0 ga release.
+Note this downloads the latest releases and patches on top of the 4.1.15-1.0.0 ga release.
 
 If the GA release was downloaded before just do repo sync to fetch latest updates.
 
@@ -27,9 +27,12 @@ To checkout the GA release without patches do the following:
 $: cd sources/meta-fsl-bsp-release
 $: git checkout imx_4.1.15_1.0.0_ga
 
+To checkout earlier releases checkout the tag associated with the release such as 4.1.15-1.1.0
+$: git checkout imx_4.1.15_1.1.0_ga
+
 Setup for a particular graphical backend.
 -----------------------------------------
-The examples uses imx6sabresd MACHINE but substitute with whatever you are using:
+The examples uses imx6qsabresd MACHINE but substitute with whatever you are using:
 
 Setup for X11.
 $: MACHINE=imx6qsabresd DISTRO=fsl-imx-x11 source ./fsl-setup-release.sh -b bld-x11
