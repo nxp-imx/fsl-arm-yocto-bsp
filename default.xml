@@ -9,6 +9,7 @@
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="git://git.freescale.com/imx" name="scm-release"/>
 
   <project remote="yocto" revision="b74ea963cefffad9fbd91d4eb9b240f6a8c86cd0" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="70ddee3ebeacbc53180ee7221533375bf0c9eac4" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
@@ -30,5 +31,7 @@
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
      <copyfile src="imx/README" dest="README-IMXBSP"/>
   </project>
+
+  <project remote="scm-release" name="meta-nxp-imx-scm" path="sources/meta-nxp-imx-scm" revision="imx-3.14.52-1.1.0_ga"/>
 
 </manifest>
