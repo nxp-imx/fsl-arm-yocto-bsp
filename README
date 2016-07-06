@@ -30,6 +30,9 @@ $: git checkout imx_4.1.15_1.0.0_ga
 To checkout earlier releases checkout the tag associated with the release such as 4.1.15-1.1.0
 $: git checkout imx_4.1.15_1.1.0_ga
 
+or 4.1.15-1.1.1
+$: git checkout imx_4.1.15_1.1.1
+
 Setup for a particular graphical backend.
 -----------------------------------------
 The examples uses imx6qsabresd MACHINE but substitute with whatever you are using:
