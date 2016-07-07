@@ -34,6 +34,7 @@
 
   <project remote="scm-release" name="meta-nxp-imx-scm" path="sources/meta-nxp-imx-scm" revision="imx-3.14.52-1.1.0_ga">
      <copyfile src="tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
+     <copyfile src="README" dest="README-IMXSCM"/>
   </project>
 
 </manifest>
