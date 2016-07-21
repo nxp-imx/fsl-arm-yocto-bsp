@@ -15,7 +15,7 @@
 
   <project remote="oe" revision="247b1267bbe95719cd4877d2d3cfbaf2a2f4865a" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <project remote="freescale" revision="cbfe3effd110b15eaee67670496bb482a2ee2e30" name="fsl-community-bsp-base" path="sources/base">
+  <project remote="freescale" revision="krogoth" name="fsl-community-bsp-base" path="sources/base">
 	<copyfile dest="README" src="README"/>
 	<copyfile dest="setup-environment" src="setup-environment"/>
   </project>
