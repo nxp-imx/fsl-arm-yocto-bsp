@@ -1,5 +1,5 @@
-Freescale's Community Yocto BSP
-===============================
+NXP's Community Yocto BSP for SCM-i.MX
+=======================================
 
 To get the BSP you need to have `repo` installed.
 
@@ -14,34 +14,32 @@ Download the BSP Yocto Project Environment into your directory:
 -------------------------------------------
 $: mkdir fsl-arm-yocto-bsp
 $: cd fsl-arm-yocto-bsp
-$: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-3.14.52-1.1.0_ga
+$: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b scm-imx-3.14.52-1.1.1_ga
 $: repo sync
 
-Note this downloads the latest patches on top of the 3.14.52-1.1.0 GA release.
+Note this downloads the latest patches on top of the 3.14.52-1.1.1 GA release.
 
 If the GA release was downloaded before just do repo sync to fetch latest updates.
 
-See ChangeLog for description of patch releases and tags for each update.
-
-To checkout the GA release without patches do the following:
+To checkout the GA release without scm patches do the following:
 $: cd sources/meta-fsl-bsp-release
-$: git checkout imx_3.14.52_1.1.0_ga
+$: git checkout scm-imx_3.14.52_1.1.1_ga
 
 Setup for a particular graphical backend.
 -----------------------------------------
-The examples uses imx6sabresd MACHINE but substitute with whatever you are using:
+The examples uses imx6sxscm-1gb-evb MACHINE but substitute with whatever you are using:
 
 Setup for X11.
-$: MACHINE=imx6qsabresd DISTRO=fsl-imx-x11 source ./fsl-setup-release.sh -b bld-x11
+$: MACHINE=imx6sxscm-1gb-evb DISTRO=fsl-imx-x11 source ./fsl-setup-release.sh -b build-x11
 
 Setup for Wayland.
-$: MACHINE=imx6qsabresd DISTRO=fsl-imx-wayland source ./fsl-setup-release.sh -b bld-wayland
+$: MACHINE=imx6sxscm-1gb-evb DISTRO=fsl-imx-wayland source ./fsl-setup-release.sh -b build-wayland
 
 Setup for Wayland and X11.
-$: MACHINE=imx6qsabresd DISTRO=fsl-imx-xwayland source ./fsl-setup-release.sh -b bld-xwayland
+$: MACHINE=imx6sxscm-1gb-evb DISTRO=fsl-imx-xwayland source ./fsl-setup-release.sh -b build-xwayland
 
 Setup for Frame Buffer.
-$: MACHINE=imx6qsabresd DISTRO=fsl-imx-fb source ./fsl-setup-release.sh -b bld-fb
+$: MACHINE=imx6sxscm-1gb-evb DISTRO=fsl-imx-fb source ./fsl-setup-release.sh -b build-fb
 
 Note if the poky community distro is used then build breaks will happen with some components using
 our meta-fsl-bsp-release layer.
