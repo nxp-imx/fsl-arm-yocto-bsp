@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://github.com/Freescale" name="freescale"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="git://git.freescale.com/imx" name="fsl-release" />
+
+  <project remote="yocto" revision="98c57bb512ea6790db8604fcf0b88c81651d2ab4" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="42411f07f63e0dfb65279c88d93d9e48b8871ba4" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
+
+  <project remote="oe" revision="247b1267bbe95719cd4877d2d3cfbaf2a2f4865a" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+  <project remote="freescale" revision="cbfe3effd110b15eaee67670496bb482a2ee2e30" name="fsl-community-bsp-base" path="sources/base">
+	<copyfile dest="README" src="README"/>
+	<copyfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+  <project remote="freescale" revision="698cf389aa446244a39b597fbf58be1d55096500" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
+  <project remote="freescale" revision="7e4237db1f48cbbde776b17a66d71def14e3809e" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
+
+  <project remote="OSSystems" revision="77736988073a5d90fcff9d0005c8477332ede387" name="meta-browser" path="sources/meta-browser" />
+  <project remote="QT5" revision="d715f2c1d340fa38f8a9860acc73de5e14a38b75" name="meta-qt5" path="sources/meta-qt5" />
+
+  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="yocto-next" >
+     <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
+     <copyfile src="imx/README" dest="README-IMXBSP"/>
+  </project>
+
+</manifest>
