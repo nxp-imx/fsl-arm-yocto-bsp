@@ -14,12 +14,18 @@ Download the BSP Yocto Project Environment into your directory:
 -------------------------------------------
 $: mkdir fsl-arm-yocto-bsp
 $: cd fsl-arm-yocto-bsp
-$: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b krogoth -m imx-4.1.15-2.0.0.xml
+$: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth
 $: repo sync
 
 Note this downloads the latest releases and patches on top of the 4.1.15-2.0.0 ga release.
 
 If the GA release was downloaded before just do repo sync to fetch latest updates.
+
+For errors with repo init, remove the .repo directory and run repo init again.
+
+To download only the 4.1.15-2.0.0 release use the release manifest in the repo init command as follows:
+$: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth -m imx-4.1.15-2.0.0.xml
+$: repo sync
 
 See ChangeLog for description of patch releases and tags for each update.
 
