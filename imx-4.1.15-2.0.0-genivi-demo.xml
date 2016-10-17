@@ -33,7 +33,7 @@
      <copyfile src="imx/README" dest="README-IMXBSP"/>
   </project>
 
-  <project remote="fsl-release" revision="4b91234d2ae926e1fd99588d6326de8ef7cf2fd4" upstream="krogoth" name="meta-nxp-genivi" path="sources/meta-nxp-genivi" >
+  <project remote="fsl-release" revision="4b91234d2ae926e1fd99588d6326de8ef7cf2fd4" name="meta-nxp-genivi" path="sources/meta-nxp-genivi" >
      <copyfile src="tools/nxp-setup-genivi.sh" dest="nxp-setup-genivi.sh"/>
   </project>
 </manifest>
