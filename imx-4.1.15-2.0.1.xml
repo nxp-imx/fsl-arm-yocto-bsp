@@ -16,8 +16,8 @@
   <project remote="oe" revision="247b1267bbe95719cd4877d2d3cfbaf2a2f4865a" name="meta-openembedded" path="sources/meta-openembedded"/>
 
   <project remote="freescale" revision="krogoth" name="fsl-community-bsp-base" path="sources/base">
-     <copyfile dest="README" src="README"/>
-     <copyfile dest="setup-environment" src="setup-environment"/>
+       <copyfile dest="README" src="README"/>
+       <copyfile dest="setup-environment" src="setup-environment"/>
   </project>
 
   <project remote="freescale" revision="3dfb82fc7e703eae9891b3ffda0e9393701f2396" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
@@ -26,7 +26,7 @@
   <project remote="OSSystems" revision="77736988073a5d90fcff9d0005c8477332ede387" name="meta-browser" path="sources/meta-browser" />
   <project remote="QT5" revision="ccae79be69c5268df3b47e4e14cea0591c39a531" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="krogoth_4.1.15-2.0.1" >
+  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="431f45e80db5f600cfb98e503e2e3ce3b6e16f74" >
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
      <copyfile src="imx/README" dest="README-IMXBSP"/>
   </project>
