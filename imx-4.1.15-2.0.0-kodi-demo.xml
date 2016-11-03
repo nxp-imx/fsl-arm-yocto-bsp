@@ -33,6 +33,6 @@
 
   <project remote="fsl-release" revision="62cb3a266ca107df47760dab7b862e622cf0f13d" upstream="krogoth" name="meta-nxp-xbmc" path="sources/meta-nxp-xbmc" >
      <copyfile src="tools/nxp-setup-kodi.sh" dest="nxp-setup-kodi.sh"/>
-     <copyfile src="README" dest="README-Kodi"/>
+     <copyfile src="README" dest="README-kodi"/>
   </project>
 </manifest>

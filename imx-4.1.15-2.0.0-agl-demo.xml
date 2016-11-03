@@ -43,6 +43,7 @@
 
   <project remote="fsl-release" revision="89771469405f4210d6ee54f8d1c7671bf1a2de36" name="meta-nxp-agl" path="sources/meta-nxp-agl">
        <copyfile src="tools/nxp-setup-agl.sh" dest="nxp-setup-agl.sh"/>
+       <copyfile src="README.txt" dest="README-agl"/>
   </project>
 
 </manifest>
