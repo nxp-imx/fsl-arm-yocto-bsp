@@ -12,7 +12,12 @@ Create the BSP directory:
 
 $ mkdir iotg
 $ cd iotg
-$ repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1.15-1.0.0_iotg-demo
+$ repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1.15-1.0.0_iotg-demo [-m <manifest>]
+
+<manifest>      Description
+default.xml     v1.0.1.xml (this is the default if no manifest is specified)
+v1.0.1.xml      Compatible with IoT Gateway with Thread SDK 1.0.0
+v1.1.0.xml      Compatible with IoT Gateway with Thread SDK 1.1.0
 
 Download the BSP:
 
