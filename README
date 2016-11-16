@@ -32,6 +32,14 @@ For errors with repo init, remove the .repo directory and run repo init again.
 
 See ChangeLog for description of patch releases and tags for each update.
 
+Examples
+--------
+To download the 4.1.15-2.0.0_ga release
+repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth -m imx-4.1.15-2.0.0.xml
+
+To download the 4.1.15-2.0.1 patch release
+repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth -m imx-4.1.15-2.0.1.xml
+
 
 Setup the build folder for a BSP release:
 -----------------------------------------
