@@ -9,7 +9,7 @@
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
-  <remote fetch="https://git.automotivelinux.org/gerrit/AGL" name="AGL"/>
+  <remote fetch="https://gerrit.automotivelinux.org/gerrit/AGL" name="AGL"/>
 
   <project remote="yocto" revision="dd0ba9ea4a11ab15348d4fe3574e4b28784db82f" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="35b8b9bd9863de208ab60e33b55f10ee43e2619b" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
