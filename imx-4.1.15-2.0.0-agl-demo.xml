@@ -9,7 +9,7 @@
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
   <remote fetch="git://git.freescale.com/imx" name="fsl-release" />
-  <remote fetch="https://git.automotivelinux.org/gerrit/AGL" name="AGL"/>
+  <remote fetch="https://gerrit.automotivelinux.org/gerrit/AGL" name="AGL"/>
   <remote fetch="https://github.com/meta-rust" name="rust"/>
   <remote fetch="git://github.com/gpsnavi"  name="NAVI"/>
 
