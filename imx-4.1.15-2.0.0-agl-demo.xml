@@ -41,7 +41,7 @@
   <project remote="NAVI" revision="master" name="gpsnavi-agl" path="sources/gpsnavi-agl" />
   <project remote="rust" revision="master" name="meta-rust" path="sources/meta-rust" />
 
-  <project remote="fsl-release" revision="89771469405f4210d6ee54f8d1c7671bf1a2de36" name="meta-nxp-agl" path="sources/meta-nxp-agl">
+  <project remote="fsl-release" revision="fa2aa979da0dc0254ad758656eda80c18a8e146b" name="meta-nxp-agl" path="sources/meta-nxp-agl">
        <copyfile src="tools/nxp-setup-agl.sh" dest="nxp-setup-agl.sh"/>
        <copyfile src="README.txt" dest="README-agl"/>
   </project>
