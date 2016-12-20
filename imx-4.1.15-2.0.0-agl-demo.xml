@@ -39,7 +39,7 @@
   <project remote="AGL" revision="c893ae9b7e61a833899b181e0017ee2cfab8b97e" name="meta-agl-demo" path="sources/meta-agl-demo" />
   <project remote="AGL" revision="master" name="DemoApps/CES2016" path="sources/CES2016" />
   <project remote="NAVI" revision="master" name="gpsnavi-agl" path="sources/gpsnavi-agl" />
-  <project remote="rust" revision="master" name="meta-rust" path="sources/meta-rust" />
+  <project remote="rust" revision="krogoth" name="meta-rust" path="sources/meta-rust" />
 
   <project remote="fsl-release" revision="krogoth" name="meta-nxp-agl" path="sources/meta-nxp-agl">
        <copyfile src="tools/nxp-setup-agl.sh" dest="nxp-setup-agl.sh"/>
