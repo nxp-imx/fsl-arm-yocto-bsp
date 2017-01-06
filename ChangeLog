@@ -1,6 +1,12 @@
 These are the changes made after the original GA release.
 Tags listed below can be used to access any release listed here.
 
+Date 1/6/2017
+4.1.30-7ulp_alpha - tag meta-fsl-bsp-release tag imx_4.1.30-7ulp_alpha
+- Standalone release only for i.MX 7ULP alpha 
+- Upgrade to 4.1.30 kernel version
+- Graphics update for v6 graphics alpha quality
+
 Date 11/16/2016
 4.1.15-2.0.1 - tag meta-fsl-bsp-release tag imx_4.1.15-2.0.1
 - Patch release only kernel changes on the meta-fsl-bps-release/imx/meta-bsp/recipes-kernel/linux
