@@ -1,0 +1,35 @@
+Key Features of the Vivante 6.x Driver Series
+
+    - Full support for Khronos OpenGL ES 3.2 API. The new OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 specifications bring AEP, 
+      plus additional functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos OpenGL ES 3.2 Conformance Test. 
+      And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product. 
+
+    - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes. 
+
+6.2.0P2.x
+    - Unified driver for i.MX6X, i.MX7ULP. However current release focused in i.MX7ULP. Full integration testing not performedd so there could be some bugs. 
+
+6.2.0P2.x New features:
+    - Unified driver that includes OpenGL ES, Vulkan, and OpenVX.
+    - Multi-GPU combined mode and individual mode support. More information in the i.MX Graphics user guide
+    - Linux DMA-BUF buffer sharing.
+    - Brand new OpenGL 2.1, 4.0 driver implementation which is based on ES3 driver code.
+    - Improved vProfiler support to include many new HW counters.
+    - Compiler optimizations that improve benchmark/application performance.
+    - Resolved Khronos GLES3.x CTS failures in all EGLConfig runs.
+    - Fixed a YUV420 buffer allocation issue that caused 4K video OOM on Android N.
+    - Fixed several GLES driver memory leak problems that cause random failures in Android CTS.
+    - Corrected EGL buffer age calculation to resolve a GooglePlay UI flickering issue.
+    - Fixed a MMU exception by limiting the number of sampler prefetch in GPU.
+    - Fixed driver code issues reported by static code analysis tools.
+    - Add support for GL_LUMINANCE8_ALPHA8_EXT texture in the directTexVIV extension.
+    - Fixed Xserver crash issues on Yocto X11 desktop.
+    - Clamp 3Dblit rectangle size to surface area to fix a GPU hang in Wayland tests.
+    - Set HW type correctly in Wayland server side to fix a memory leak in 2D composition.
+
+
+6.2.0P2.3 Known Issues    
+    - MGS-2513:[imx7ulp] RTC suspend/resume stress test met resume failed. GPU driver issue.
+    - MGS-2512:[imx7ulp] xwld:mm07 some items show nothing on display.
+    - MGS-2511:[imx7ulp] xwld: QT5 app show wrong resolution.
+    - MGS-2503:[imx7ulp] X11/Xwld: XWindow 2D Acceleration performance test met "X Error of failed request: BadMatch (invalid parameter attributes)" error. 
