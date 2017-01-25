@@ -1,6 +1,11 @@
 These are the changes made after the original GA release.
 Tags listed below can be used to access any release listed here.
 
+Date 2/16/2017
+4.1.15-2.0.2 - manifest imx_4.1.15-2.0.2.xml
+- Patch release only kernel changes on the meta-fsl-bps-release/imx/meta-bsp/recipes-kernel/linux
+- This patch release is just a Yocto Project release layer and manifest update
+
 Date 1/6/2017
 4.1.30-7ulp_alpha - manifest imx_4.1.30-7ulp_alpha.xml
 - Standalone release only for i.MX 7ULP alpha 
