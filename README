@@ -40,6 +40,9 @@ repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogot
 To download the 4.1.15-2.0.1 patch release
 repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth -m imx-4.1.15-2.0.1.xml
 
+To download the 4.1.15-2.0.2 patch release
+repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth -m imx-4.1.15-2.0.2.xml
+
 To download the 4.1.30-7ulp_alpha release
 repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth -m imx-4.1.30-7ulp_alpha.xml
 
