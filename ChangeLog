@@ -1,5 +1,11 @@
-These are the changes made after the original GA release.
-Tags listed below can be used to access any release listed here.
+Date 4/15/2017
+4.1.33-7ulp_beta - manifest imx_4.1.33-7ulp_beta.xml
+- Stanadlone beta release for i.MX 7ULP EVK on the morty Yocto Project
+- Kernel update to 4.1.33
+- Graphics update for v6 graphics to v6.2.0.p0
+- Graphics update for v5 grahpics for v5.0.11.p8.7 - minor patches
+- Codec upgrade to 4.2.0 and Gstreamer upgrade to 1.10
+- imx-gpu-sdk upgrade to v4
 
 Date 3/29/2017
 4.1.15-2.0.3 - manifest imx_4.1.15-2.0.3.xml
