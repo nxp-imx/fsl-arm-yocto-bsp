@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <include name="imx-4.1.15-2.0.0.xml"/>
-  <project remote="fsl-release" name="meta-nxp-iotg" path="sources/meta-nxp-iotg" revision="master" >
-	<linkfile src="README" dest="README-iotg"/>
-  </project>
-</manifest>
