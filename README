@@ -34,20 +34,8 @@ See ChangeLog for description of patch releases and tags for each update.
 
 Examples
 --------
-To download the 4.1.15-2.0.0_ga release
-repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth -m imx-4.1.15-2.0.0.xml
-
-To download the 4.1.15-2.0.1 patch release
-repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth -m imx-4.1.15-2.0.1.xml
-
-To download the 4.1.15-2.0.2 patch release
-repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth -m imx-4.1.15-2.0.2.xml
-
-To download the 4.1.15-2.0.3 patch release
-repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth -m imx-4.1.15-2.0.3.xml
-
-To download the 4.1.30-7ulp_alpha release
-repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth -m imx-4.1.30-7ulp_alpha.xml
+To download the 4.1.33-7ulp_beta release
+repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth -m imx-4.1.33-7ulp_beta.xml
 
 Setup the build folder for a BSP release:
 -----------------------------------------
@@ -72,16 +60,16 @@ components using our meta-fsl-bsp-release layer.
 Examples:
 
 - Setup for X11.
-$: MACHINE=imx6qsabresd DISTRO=fsl-imx-x11 source ./fsl-setup-release.sh -b bld-x11
+$: MACHINE=imx7upevk DISTRO=fsl-imx-x11 source ./fsl-setup-release.sh -b bld-x11
 
 - Setup for Wayland.
-$: MACHINE=imx6qsabresd DISTRO=fsl-imx-wayland source ./fsl-setup-release.sh -b bld-wayland
+$: MACHINE=imx7ulpevk DISTRO=fsl-imx-wayland source ./fsl-setup-release.sh -b bld-wayland
 
 - Setup for Wayland and X11.
-$: MACHINE=imx6qsabresd DISTRO=fsl-imx-xwayland source ./fsl-setup-release.sh -b bld-xwayland
+$: MACHINE=imx7ulpevk DISTRO=fsl-imx-xwayland source ./fsl-setup-release.sh -b bld-xwayland
 
 - Setup for Frame Buffer.
-$: MACHINE=imx6qsabresd DISTRO=fsl-imx-fb source ./fsl-setup-release.sh -b bld-fb
+$: MACHINE=imx7ulpevk DISTRO=fsl-imx-fb source ./fsl-setup-release.sh -b bld-fb
 
 
 Build an image:
