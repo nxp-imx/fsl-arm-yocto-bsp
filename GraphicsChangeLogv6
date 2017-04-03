@@ -6,10 +6,13 @@ Key Features of the Vivante 6.x Driver Series
 
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes. 
 
-6.2.0P2.x
+6.2.0.p4
+   - 3D: MGS-2551 [#imx-406] webgl case shader-with-too-many-uniforms.html failed on 7ulp
+
+6.2.0.p3
     - Unified driver for i.MX6X, i.MX7ULP. However current release focused in i.MX7ULP. Full integration testing not performedd so there could be some bugs. 
 
-6.2.0P2.x New features:
+6.2.0.p2 New features:
     - Unified driver that includes OpenGL ES, Vulkan, and OpenVX.
     - Multi-GPU combined mode and individual mode support. More information in the i.MX Graphics user guide
     - Linux DMA-BUF buffer sharing.
@@ -28,7 +31,7 @@ Key Features of the Vivante 6.x Driver Series
     - Set HW type correctly in Wayland server side to fix a memory leak in 2D composition.
 
 
-6.2.0P2.3 Known Issues    
+6.2.0.p2 Known Issues    
     - MGS-2513:[imx7ulp] RTC suspend/resume stress test met resume failed. GPU driver issue.
     - MGS-2512:[imx7ulp] xwld:mm07 some items show nothing on display.
     - MGS-2511:[imx7ulp] xwld: QT5 app show wrong resolution.
