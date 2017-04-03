@@ -1,3 +1,10 @@
+Incremental Bug Fixes for P8.7 Graphics
+========================================
+EGL: MGS-2099  Resolve surface was always created in wayland backend
+EGL: MGS-2260 fix memory leak with pixmap EGL image
+VG2D: MGS-2257  fix kernel oops with OpenVG pixmap surface
+3D: MGS-2212  fix gpu hang with ES30 shader
+
 
 Bug Fixes for P8.6 Graphics
 ===========================
