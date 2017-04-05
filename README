@@ -15,7 +15,7 @@ Download the Yocto Project Environment into your directory:
 -----------------------------------------------------------
 $: mkdir fsl-arm-yocto-bsp
 $: cd fsl-arm-yocto-bsp
-$: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth [-m <manifest>]
+$: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-morty [-m <manifest>]
 $: repo sync
 
 <manifest>                      Description
@@ -35,7 +35,7 @@ See ChangeLog for description of patch releases and tags for each update.
 Examples
 --------
 To download the 4.1.33-7ulp_beta release
-repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth -m imx-4.1.33-7ulp_beta.xml
+repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-morty -m imx-4.1.33-7ulp_beta.xml
 
 Setup the build folder for a BSP release:
 -----------------------------------------
@@ -78,4 +78,4 @@ bitbake <image recipe>
 
 Some image recipes:
 fsl-image-gui - full image with demos and tests used for testing with graphics, no QT.
-fsl-image-qt5 - fsl-image-gui with QT 5.5.
+fsl-image-qt5 - fsl-image-gui with QT 5.7.
