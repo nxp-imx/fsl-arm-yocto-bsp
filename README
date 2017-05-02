@@ -60,7 +60,7 @@ components using our meta-fsl-bsp-release layer.
 Examples:
 
 - Setup for X11.
-$: MACHINE=imx7upevk DISTRO=fsl-imx-x11 source ./fsl-setup-release.sh -b bld-x11
+$: MACHINE=imx7ulpevk DISTRO=fsl-imx-x11 source ./fsl-setup-release.sh -b bld-x11
 
 - Setup for Wayland.
 $: MACHINE=imx7ulpevk DISTRO=fsl-imx-wayland source ./fsl-setup-release.sh -b bld-wayland
