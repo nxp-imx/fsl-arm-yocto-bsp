@@ -1,3 +1,11 @@
+Date 7/28/2017
+4.9.11-1.0.0 - manifest imx_4.9.11-1.0.0_ga.xml
+- GA release for i.MX 6Quad/Dual/Plus/Solo/SoloX/SoloLite/Ultralite, 6ULL, 7Dual and 7ULP
+- Upgrade Kernel to 4.9.11
+- Upgrade U-Boot to 2017.03
+- Upgrade graphics v6 to v6.2.2.p0
+- Upgrade Gstreamer to 1.10.4 and Codec/Parser to 4.2.1
+
 Date 4/15/2017
 4.1.33-7ulp_beta - manifest imx_4.1.33-7ulp_beta.xml
 - Stanadlone beta release for i.MX 7ULP EVK on the morty Yocto Project
