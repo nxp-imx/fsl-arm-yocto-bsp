@@ -33,6 +33,10 @@ $: git checkout imx_4.1.15_1.1.0_ga
 or 4.1.15-1.1.1
 $: git checkout imx_4.1.15_1.1.1
 
+or 4.1.15-1.1.2
+$: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1.15-1.0.0_ga -m imx-4.1.15-1.1.2.xml
+$: repo sync
+
 Setup for a particular graphical backend.
 -----------------------------------------
 The examples uses imx6qsabresd MACHINE but substitute with whatever you are using:
