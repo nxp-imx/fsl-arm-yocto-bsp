@@ -8,7 +8,7 @@
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
-  <remote fetch="git://git.freescale.com/imx" name="fsl-release" />
+  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF" />
 
   <project remote="yocto" revision="f5da2a5913319ad6ac2141438ba1aa17576326ab" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="be78894e4682f111575470fb23e51e6ba523508d" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
@@ -26,7 +26,7 @@
   <project remote="OSSystems" revision="77736988073a5d90fcff9d0005c8477332ede387" name="meta-browser" path="sources/meta-browser" />
   <project remote="QT5" revision="ccae79be69c5268df3b47e4e14cea0591c39a531" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="90399d99af8a2660ebe50b49752e95b210239fd9" >
+  <project remote="CAF" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="90399d99af8a2660ebe50b49752e95b210239fd9" >
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
      <copyfile src="imx/README" dest="README-IMXBSP"/>
   </project>
