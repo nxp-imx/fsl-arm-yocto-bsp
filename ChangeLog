@@ -1,6 +1,7 @@
 Date 12/14/2017
 4.9.11-1.0.1 - manifest imx_4.9.11-1.0.1.xml
 - Patch release only U-Boot changes on meta-fsl-bps-release/imx/meta-bsp/recipes-bsp/u-boot
+- Release on codeauroraforum.org
 
 Date 7/28/2017
 4.9.11-1.0.0 - manifest imx_4.9.11-1.0.0_ga.xml
