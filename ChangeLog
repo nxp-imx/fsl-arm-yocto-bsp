@@ -4,6 +4,7 @@ Tags listed below can be used to access any release listed here.
 Date 12/14/2017
 4.1.15-1.2.1 - manifest imx-4.1.15-1.2.1.xml
 - Patch release only U-Boot changes on meta-fsl-bps-release/imx/meta-bsp/recipes-bsp/u-boot
+- Release on CAF
 
 Date 6/28/2016
 4.1.15-1.2.0 - tag meta-fsl-bsp-release tag imx_4.1.15-1.2.0_ga
