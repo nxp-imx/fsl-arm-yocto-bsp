@@ -3,7 +3,7 @@
 
   <default sync-j="2"/>
 
-  <remote fetch="git://git.freescale.com/imx" name="fsl-release" />
+  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF" />
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
   <remote fetch="git://github.com/Freescale" name="freescale"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
@@ -26,7 +26,7 @@
   <project remote="OSSystems" revision="30b8d6b3d0d6501c56ef6967a2fa73a3d4bf5fe9" name="meta-browser" path="sources/meta-browser" />
   <project remote="QT5" revision="fc026381545650e10fdd488d5b2a3b2d78f87793" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="fsl-release" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="fido_3.14.38_6QP_ga" >
+  <project remote="CAF" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="fido_3.14.38_6QP_ga" >
      <copyfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
   </project>
 
